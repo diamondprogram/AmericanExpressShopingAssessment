@@ -14,23 +14,23 @@ fun main(args: Array<String>) {
         println("Welcome to Express Store");
         println("1. Checkout");
         println("2. exit");
-        var userOption = 0;
+        var userOption = "";
         //request the user to eneter an option
         //if user eneter a options that is not valid it will keep looping til option that is enterd is accepted;
         var userSeletedOption = false;
         val inputScanner = Scanner(System.`in`);
         while (!userSeletedOption) {
             print("Select an Option: ");
-            userOption = inputScanner.nextInt();
+            userOption = inputScanner.next();
             //if input entered by the user is not accepted and invaliud message is printed and is promted to enter an option again.
-            if (userOption != 1 && userOption != 2) {
+            if (userOption != "1" && userOption != "2") {
                 println("Invalid input detected!");
             } else {
                 userSeletedOption = true;
             }
         }
 
-        if (userOption == 1) {
+        if (userOption == "1") {
             val checkout = Checkout();
             println("We currently have apples and oranges in Stock.")
 
@@ -68,7 +68,7 @@ fun main(args: Array<String>) {
                 notify.notification(false,list);
             }
 
-        } else if (userOption == 2) {// exits from the application
+        } else if (userOption == "2") {// exits from the application
             print("Have a great day.");
             exitProcess(1);
         }
