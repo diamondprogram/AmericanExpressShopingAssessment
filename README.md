@@ -7,3 +7,7 @@ with Step 1 and 2 being so similar to each other the combined the 2 steaps into 
 # Step 3
 
 I had removed most of the print line staments in the main app, mainkly those realated to if the order was a success or not. This is the first time working with kotlin anfd the wording for the 3rd requiremnet was very vague so i made a class if a function call noticiation, wher i get a boolean (true if the process was a success and false of it failed), the list of items in the cart and the total cost and notifies the user with messages whather or not the order is valid.
+
+# Step 4 
+
+Made alot of changes to the pre existing code, made so the user can enter a list of items rather than one item at a time. Create class for the apple and orange object and added the code to determin if the order exceed the current stock of items. Added new notification method to notify the user/customer if the items exceeded their limit.
