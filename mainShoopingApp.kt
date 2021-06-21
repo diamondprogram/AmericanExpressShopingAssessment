@@ -10,7 +10,7 @@ import app.Checkout;
             println("Welcome to Express Store");
             println("1. Checkout");
             println("2. exit");
-            var userOption;
+            var userOption = "";
             //request the user to eneter an option
             //if user eneter a options that is not valid it will keep looping til option that is enterd is accepted;
             var userSeletedOption = false;
